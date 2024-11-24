@@ -20,6 +20,7 @@ public interface ProductoService {
     public void delete(Producto producto);
     
     public List<Producto> findByPrecioBetweenOrderByDescripcion(double precioInf, double precioSup);
+    public List<Producto> findByDescripcionContaining(String descripcion);
     
      public List<Producto> metodoJPQL(@Param("precioInf") double precioInf, @Param("precioSup") double precioSup);
      
